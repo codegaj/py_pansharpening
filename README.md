@@ -1,4 +1,5 @@
-# Py_pansharpening
+# Py_pansharpening [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/codegaj/py_pansharpening/blob/master/LICENSE)
+
 A Python version pansharpening toolbox with some classic methods. The toolbox implements the following algorithms so far,
 - Brovey 
 - PCA
@@ -19,12 +20,16 @@ A Python version pansharpening toolbox with some classic methods. The toolbox im
 python demo_pansharpening.py
 ```
  
-**Demo for Evaluating Above Methods**
+**Demo for Evaluating All Methods**
 ```
 python demo_all_methods.py
 ```
 
-**Evaluation example**
+**Visualization**
+
+![](./example_visualization.jpg)
+
+**Evaluation Example**
 
 ![](./example_comparision.png)
 
