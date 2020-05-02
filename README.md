@@ -29,7 +29,7 @@ python demo_all_methods.py
 
 ![](./example_visualization.jpg)
 
-**Evaluation Example**
+**Evaluation**
 
 ![](./example_comparision.png)
 
