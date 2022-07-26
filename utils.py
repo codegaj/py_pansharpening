@@ -14,14 +14,14 @@ import scipy.misc as misc
 def upsample_bilinear(image, ratio):
     
     h,w,c = image.shape
-    re_image = cv2.resize(image, (w*ratio, h*ratio), cv2.INTER_LINEAR)
+    re_image = cv2.resize(image, (w*ratio, h*ratio), interpolation=cv2.INTER_LINEAR)
     
     return re_image
 
 def upsample_bicubic(image, ratio):
     
     h,w,c = image.shape
-    re_image = cv2.resize(image, (w*ratio, h*ratio), cv2.INTER_CUBIC)
+    re_image = cv2.resize(image, (w*ratio, h*ratio), interpolation=cv2.INTER_CUBIC)
     
     return re_image
 

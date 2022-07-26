@@ -50,7 +50,7 @@ new_lrhs = np.concatenate(new_lrhs, axis=-1)
 used_ms = new_lrhs[0::4, 0::4, :]
 
 #'''generating ms image with bicubic interpolation'''
-#used_ms = cv2.resize(original_msi, (original_msi.shape[1]//4, original_msi.shape[0]//4), cv2.INTER_CUBIC)
+#used_ms = cv2.resize(original_msi, (original_msi.shape[1]//4, original_msi.shape[0]//4), interpolation=cv2.INTER_CUBIC)
 
 '''generating pan image with gaussian kernel'''
 used_pan = signal.convolve2d(original_pan, kernel, boundary='wrap',mode='same')
@@ -62,7 +62,7 @@ used_pan = used_pan[0::4, 0::4, :]
 #used_pan = np.dot(original_msi, spectral_kernel)
 
 #'''generating ms image with bicubic interpolation'''
-#used_pan = cv2.resize(original_pan, (original_pan.shape[1]//4, original_pan.shape[0]//4), cv2.INTER_CUBIC)
+#used_pan = cv2.resize(original_pan, (original_pan.shape[1]//4, original_pan.shape[0]//4), interpolation=cv2.INTER_CUBIC)
 #used_pan = np.expand_dims(used_pan, -1)
 
 gt = np.uint8(255*original_msi)
